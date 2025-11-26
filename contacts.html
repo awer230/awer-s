@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты - TechMobile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        nav {
+            background: #2e2e2e;
+            padding: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="1index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Наши контакты</h1>
+        
+        <div style="margin-top: 2rem;">
+            <h3>Адрес:</h3>
+            <p>г. Москва, ул. Примерная, д. 123</p>
+            
+            <h3>Телефон:</h3>
+            <p>+7 (495) 123-45-67</p>
+            
+            <h3>Email:</h3>
+            <p>info@techmobile.ru</p>
+            
+            <h3>Режим работы:</h3>
+            <p>Пн-Пт: 9:00-21:00<br>
+            Сб-Вс: 10:00-20:00</p>
+        </div>
+        
+        <form style="margin-top: 2rem;">
+            <h3>Обратная связь</h3>
+            <input type="text" placeholder="Ваше имя" style="display: block; margin: 1rem 0; padding: 0.5rem; width: 300px;">
+            <input type="email" placeholder="Email" style="display: block; margin: 1rem 0; padding: 0.5rem; width: 300px;">
+            <textarea placeholder="Сообщение" style="display: block; margin: 1rem 0; padding: 0.5rem; width: 300px; height: 100px;"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>TechMobile &copy; 2023. Все права защищены</p>
+    </footer>
+</body>
+</html>
